@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+*{
+  margin:0px;
+  padding:0px;
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+body{
+  background-color: aliceblue;
+}
+.navSection{
+  border:1px  solid black;
+  display:flex;
+  
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 70px;
+  padding:20px;
+}
+.navbar-section {
+  position: sticky;
+  top: 0;
+}
+.proSection{
+display: flex;
+background-color: white;
+}
+.imgBox{
+  width:80%;
+  padding:10px;
+}
+.proImage{
+  width: 80%;
+}
+.proTitle h1{
+padding: 10px;
+}
+.subMenu ul li{
+  list-style: none;
+  margin:30px;
+  margin-top: 10px;
+  
+}
+.subMenu{
+  background-color: green;
+  color: antiquewhite;
+  
+  height:50px;
+}
+.subMenu ul{
+  display: inline-flex;
+}
+.pageSection{
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  gap:10px;
+}
+.pageImg{
+  width:250px;
+  height: 250px;
+  padding-top: 20px;
+}
+.pageImg img {
+  width: 80%;
+}
+.ind-section{
+  display:flex;
+}
+.ind-img{
+  width:500px;
+  height:500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ind-image img{
+  width:100%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ind-details{
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.space{
+  margin: 10px;
+}
+.ind-detiles button{
+  background-color:aqua;
+  width: 10rem;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+.fullpage{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.pro-selected{
+  width:30%;
+  border: 1px solid black;
+}
+.pro-input input{
+  margin: 5px;
+}
+ul li{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.cart{
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart span{
+  color: orange;
 }
